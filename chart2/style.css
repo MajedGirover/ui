@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    height: 774px;
+    border: 1px solid #b5b5b599;
+    border-radius: 30px;
+    background: #f5f5f5;
+}
+
+.container {
+    position: relative;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 700px;
+    width: 800px;
+    border-radius: 30px 30px 0 0;
+    /* border: 1px solid #c0d6c0; */
+    background: #f1f1f1;
+    background: linear-gradient(180deg, rgb(226, 226, 226) 0%, rgba(250, 250, 250, 1) 85%, rgb(13, 144, 6) 85%, rgb(88, 204, 81) 100%);
+}
+
+.chart-container>div {
+    position: relative;
+    width: 85px;
+    margin: 7px;
+    margin-bottom: 60px;
+}
+
+.item:nth-child(1) {
+    height: 10%;
+}
+
+.item:nth-child(2) {
+    height: 20%;
+}
+
+.item:nth-child(3) {
+    height: 24%;
+}
+
+.item:nth-child(4) {
+    height: 40%;
+}
+
+.item:nth-child(5) {
+    height: 44%;
+}
+
+.item:nth-child(6) {
+    height: 70%;
+}
+
+.cylender {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50% 50% 50% 50% / 0 0 10px 10px;
+    box-shadow: inset 25px 1px 37px -30px #000000e3, inset -25px -1px 30px -30px #000000e3;
+}
+
+.item:nth-child(1) .cylender {
+    background: rgba(69, 0, 0, 1);
+}
+
+.item:nth-child(1) .cylender .top {
+    background: linear-gradient(90deg, rgba(69, 0, 0, 1) 0%, rgba(97, 2, 2, 1) 25%, rgba(97, 2, 2, 1) 75%, rgba(71, 0, 0, 1) 100%);
+}
+
+.item:nth-child(2) .cylender {
+    background: rgb(212, 212, 212);
+}
+
+.item:nth-child(2) .cylender .top {
+    background: linear-gradient(90deg, rgb(212, 212, 212) 0%, rgb(175, 175, 175) 25%, rgba(175, 175, 175, 1) 75%, rgba(212, 212, 212, 1) 100%);
+}
+
+.item:nth-child(3) .cylender {
+    background: rgba(250, 0, 47, 1);
+}
+
+.item:nth-child(3) .cylender .top {
+    background: linear-gradient(90deg, rgba(250, 0, 47, 1) 0%, rgba(190, 0, 35, 1) 25%, rgba(190, 0, 35, 1) 75%, rgba(250, 0, 47, 1) 100%);
+}
+
+.item:nth-child(4) .cylender {
+    background: rgba(190, 0, 0, 1);
+}
+
+.item:nth-child(4) .cylender .top {
+    background: linear-gradient(90deg, rgba(190, 0, 0, 1) 0%, rgb(152, 8, 8) 25%, rgba(152, 8, 8, 1) 75%, rgba(190, 0, 0, 1) 100%);
+}
+
+.item:nth-child(5) .cylender {
+    background: rgba(240, 240, 240, 1);
+}
+
+.item:nth-child(5) .cylender .top {
+    box-shadow: inset 0px 0px 5px 4px #e0e0e0, inset 0px 0px 54px 26px #d6d6d6, inset 0px 0px 54px 26px #c1c1c1;
+}
+
+.item:nth-child(6) .cylender {
+    background: rgb(222, 222, 198);
+}
+
+.item:nth-child(6) .cylender .top {
+    background: linear-gradient(90deg, rgb(222, 222, 198) 0%, rgb(206, 206, 185) 25%, rgba(206, 206, 185, 1) 75%, rgba(222, 222, 198, 1) 100%);
+}
+
+.top,
+.number {
+    position: absolute;
+    width: 100%;
+}
+
+.top {
+    border-radius: 50%;
+    height: 14px;
+    top: -7px;
+}
+
+.item::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 64px;
+    bottom: -31px;
+    background: linear-gradient(180deg, #000000a1, transparent);
+    z-index: 0;
+    filter: blur(3px);
+}
+
+.number {
+    top: -34px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00a200;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.text {
+    font-size: 52px;
+    padding-left: 40px;
+    color: #345667;
+    font-weight: bold;
+}
+
+.etoro {
+    padding: 20px 40px;
+    color: #00a200;
+}
+
+#btn-invest {
+    background: #65ba3a;
+    color: #fff;
+    padding: 8px 41px;
+    border: 1px solid #59bb17;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.brand {
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    top: -129px;
+    background: inherit;
+    left: 3px;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 52px;
+    font-weight: bolder;
+    color: #fff;
+    border: 1px solid #0000001a;
+}
+
+.btn-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    width: 100%;
+    height: 77px;
+}
+
+.btn-wrapper button {
+    background: #00afda;
+    width: 60%;
+    height: 39px;
+    border: 0;
+    border-radius: 38px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    box-shadow: 0px 0px 9px -1px #75d7f5;
+}
